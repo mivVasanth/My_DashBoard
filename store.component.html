@@ -1,0 +1,15 @@
+<mat-selection-list #books>
+    <mat-list-option  #clientValue  (selectionChange)="changeClient($event)" *ngFor="let books of booklist">
+      {{books.name}}
+      <!-- <li>Book Author :{{books.author}}</li> -->
+    </mat-list-option>
+  </mat-selection-list>
+  
+  <p>
+    Options selected: {{books.selectedOptions.selected.length}}
+</p>
+<ul *ngFor="let books of booklist" >
+    <h2>Book Name :{{books.name}}</h2>
+    <li>Book Author :{{books.author}}</li>
+
+</ul>

@@ -1,0 +1,41 @@
+
+<mat-card>
+    <mat-card-header>
+        <h1>RoleUpdate</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform"  (ngSubmit)="updateuser()">
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Role</mat-label>
+              <!-- <mat-select formControlName="role">
+                <mat-option *ngFor="let item of rolelist" [value]="item.role">
+                  {{item.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field> -->
+
+            <!-- <mat-form-field appearance="fill"> -->
+                <!-- <mat-label>Favorite food</mat-label> -->
+                <mat-select formControlName="role">
+                  <mat-option *ngFor="let food of rolelist" [value]="food.id">
+                    {{food.name}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+
+            <div>
+            <mat-checkbox formControlName="isactive" class="example-margin">isactive</mat-checkbox>
+        </div>
+              <div>
+                <button mat-raised-button color="primary"  cdkFocusInitial>Update</button>
+                <a mat-dialog-close mat-raised-button color="accent">Close</a>
+              </div>
+          
+            
+          </form>
+          
+    </mat-card-content>
+  </mat-card>
+  

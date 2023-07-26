@@ -1,0 +1,156 @@
+
+
+
+<div class="mat-elevation-z8">
+
+
+<!-- <div>
+  <input type="text"
+     placeholder=" search here"
+     [(ngModel)] = "filterText"
+     >
+    </div>
+
+
+    
+
+<table id="user" >
+  <tr>
+  <th>user name</th>
+  <th>name</th>
+  <th>email</th>
+  <th>role</th>
+  <th>symbol</th>
+  <th>atcion</th>
+</tr>
+
+<tr *ngFor = "let users of userlist">
+<td>{{users.id}}</td>
+<td>{{users.name}}</td>
+<td>{{users.email}}</td>
+<td>{{users.isactive?'Active' : 'In Active'}}</td>
+<td>{{users.role===''?'Un Assigned' : users.role}}</td>
+<td>{{users.id}}</td>
+
+<td></td>
+
+
+
+  
+</tr>
+
+</table> -->
+<!-- <div>
+
+<button  incriment()>click me</button>
+<button >click me</button>
+
+<p>event :{{announcement}}</p>
+
+</div> -->
+
+
+
+
+
+<label>
+
+<input type="text"  onchange="($event)">
+
+ 
+</label>
+    <table mat-table matSort [dataSource]="dataSource">
+      <!-- Position Column -->
+      <ng-container matColumnDef="username">
+     
+
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> UserName </th>
+        
+           
+      
+
+        <td mat-cell *matCellDef="let element">
+          <img src="assets\attitude-wallpapers-hd-attitude-hd-wallpaper (4).jpg" type="img"> 
+          {{element.id}} </td>
+
+
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+  
+      <!-- Weight Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="role">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> role </th>
+        <td mat-cell *matCellDef="let element"> {{element.role===''?'Un Assigned' : element.role}} </td>
+      </ng-container>
+      <ng-container matColumnDef="status">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.isactive?'Active' : 'In Active'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="action">
+        <th mat-header-cell mat-sort-header *matHeaderCellDef> Action </th>
+
+        <td mat-cell  *matCellDef="let element">               
+           <a *ngIf= "element.role!='Admin'" (click)="updateuser(element.id)"  mat-raised-button color="primary">UpdateUser
+            
+           </a>
+ </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of periodic elements">
+    </mat-paginator>
+  </div>
+
+
+  <!-- <div class="container"> 
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+<a type="button"  class="button button-danger" routerLink="/bar-chart">Bar Charts</a>
+        </li>
+
+        <li class="nav-item">
+            <a type="button"  class="button button-danger" routerLink="/doughnut-chart">doughnut-chart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button"  class="button button-danger" routerLink="/radar-chart">radar Charts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a type="button"  class="button button-danger" routerLink="/pie-chart">pie Charts</a>
+                                            </li>
+    </ul>
+
+  </div> -->
+
+
+  <label class="hoverable" for="fileInput">
+    <img src="assets\attitude-wallpapers-hd-attitude-hd-wallpaper (4).jpg" type="img"> 
+    <div class="hover-text">Choose file</div>
+    <div class="background"></div>
+  </label>
+  <br/>
+  <input id="fileInput" type='file' (change)="onSelectFile($event)">
+  <!-- <button *ngIf="src\assets\attitude-wallpapers-hd-attitude-hd-wallpaper (4).jpg " (click)="delete()" >delete</button> -->
+
+
+
+  <!-- <hy-profile-image
+  [src]="sampleImage"
+  [size]="sizes[currentSizeIndex]"
+></hy-profile-image> -->
+  
