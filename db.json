@@ -1,0 +1,187 @@
+{
+  "user": [
+    {
+      "id": "983456",
+      "name": "Vasanth",
+      "email": "vasanth@gmail.com",
+      "password": "Vasanth@123",
+      "gender": "male",
+      "role": "Admin",
+      "isactive": true
+    },
+    {
+      "id": "12345",
+      "name": "Anirudh",
+      "email": "mibvvff@gmail.com",
+      "password": "vasanth@123",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "123456",
+      "name": "Anirudh",
+      "email": "mibvvf@gmail.com",
+      "password": "vasanth@13",
+      "gender": "male",
+      "role": "group",
+      "isactive": true
+    },
+    {
+      "id": "Balayya",
+      "name": "Balayya",
+      "email": "Balayya@gmail.com",
+      "password": "Balayya",
+      "gender": "male",
+      "role": "group",
+      "isactive": true
+    },
+    {
+      "id": "Balayya33",
+      "name": "Balayya33",
+      "email": "Balayya@gmail.com",
+      "password": "Balayya",
+      "gender": "male",
+      "role": "group",
+      "isactive": true
+    },
+    {
+      "id": "Balayya11",
+      "name": "Balayya11",
+      "email": "Balayya@gmail.com",
+      "password": "Balayya",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "Balayya22",
+      "name": "Balayya22",
+      "email": "Balayya@gmail.com",
+      "password": "Balayya",
+      "gender": "male",
+      "role": "group",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "id": "staff",
+      "name": "Staff"
+    },
+    {
+      "id": "group",
+      "name": "Group"
+    }
+  ],
+  "Books": [
+    {
+      "id": "1",
+      "name": "Advitha",
+      "zoner": "Horror",
+      "author": "Balakrishna Nandamuri"
+    },
+    {
+      "id": "2",
+      "name": "Advitha2",
+      "zoner": "Action",
+      "author": "Balakrishna Nandamuri"
+    }
+  ],
+  "BarCharts": [
+    {
+      "Lables": [
+        2001,
+        2002,
+        2003,
+        2004,
+        4565,
+        75657,
+        9878
+      ]
+    },
+    {
+      "Legend": true
+    },
+    {
+      "Data": [
+        {
+          "data": [
+            2,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "label": "seriesA"
+        },
+        {
+          "data": [
+            24,
+            4,
+            5,
+            6,
+            7,
+            54,
+            4,
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6
+          ],
+          "label": "seriesB"
+        },
+        {
+          "data": [
+            24,
+            4,
+            5,
+            6,
+            7,
+            54,
+            4,
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            6
+          ],
+          "label": "seriesc"
+        }
+      ]
+    },
+    {
+      "ChartType": "bar"
+    },
+    {
+      "Dchartdata": [
+        140,
+        563,
+        345,
+        45
+      ]
+    },
+    {
+      "Dchartlables": [
+        "sales1",
+        "sales2",
+        "sales3",
+        "sales4"
+      ]
+    },
+    {
+      "Dcharttype": "doughnut"
+    }
+  ]
+}
